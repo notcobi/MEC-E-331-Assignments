@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1695923235 "c:/Users/User/Documents/School/Year 3/MEC-E-331-Assignments/A1/main.tex" "main.pdf" "main" 1695923238 0
+["pdflatex"] 1695923458 "c:/Users/User/Documents/School/Year 3/MEC-E-331-Assignments/A1/main.tex" "main.pdf" "main" 1695923461 0
   "C:/Users/User/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1695921251 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/User/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1695753682 14064 388aeca2ba5ed4633cf10974288bf093 ""
   "C:/Users/User/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1695753568 24141477 3a9476bb8d9827eec0d41331d6b8f7a8 ""
@@ -225,11 +225,13 @@
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
   "Questions/Figures/Q1LinearVelocityProfile.png" 1695920856 16126 96e343c7dc25acb6df77d3d859d7738b ""
   "Questions/Figures/Q1ProblemDiagram.png" 1695917155 189484 9cc2edd459e884ed52e5f640c4053c52 ""
-  "Questions/Q1.tex" 1695923234 2862 8d5bcd1e5dab298b5ac4745e0b02ac2e ""
-  "c:/Users/User/Documents/School/Year 3/MEC-E-331-Assignments/A1/main.tex" 1695921241 3388 3da7bec5928e175af7448bf884c32379 ""
-  "main.aux" 1695923237 1515 d6cefc2ae8dfcb447a6275403f07cd46 "pdflatex"
-  "main.out" 1695923237 133 c4f4bf1013f92281ea6574d6929062b8 "pdflatex"
-  "main.tex" 1695921241 3388 3da7bec5928e175af7448bf884c32379 ""
+  "Questions/Figures/Q2ProblemDiagram.png" 1695923354 78537 96a043027b5c648e713bb073175a0857 ""
+  "Questions/Q1.tex" 1695923454 2876 4da0af1494b9ac7b2f4f1c4d619010c3 ""
+  "Questions/Q2.tex" 1695923454 525 3687098bb9c6960d36adab361a523620 ""
+  "c:/Users/User/Documents/School/Year 3/MEC-E-331-Assignments/A1/main.tex" 1695923454 3386 98820641e6287f62cb2fd7e1701a0a0c ""
+  "main.aux" 1695923460 1854 34d9a8c66ce33c3cb22df6e404252f36 "pdflatex"
+  "main.out" 1695923460 168 dbbc88a60bfd41893b71b1de71c43d39 "pdflatex"
+  "main.tex" 1695923454 3386 98820641e6287f62cb2fd7e1701a0a0c ""
   (generated)
   "main.aux"
   "main.log"
