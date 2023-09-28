@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1695921664 "c:/Users/User/Documents/School/Year 3/MEC-E-331-Assignments/A1/main.tex" "main.pdf" "main" 1695921666 0
+["pdflatex"] 1695923235 "c:/Users/User/Documents/School/Year 3/MEC-E-331-Assignments/A1/main.tex" "main.pdf" "main" 1695923238 0
   "C:/Users/User/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1695921251 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/User/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1695753682 14064 388aeca2ba5ed4633cf10974288bf093 ""
   "C:/Users/User/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1695753568 24141477 3a9476bb8d9827eec0d41331d6b8f7a8 ""
@@ -24,6 +24,7 @@
   "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmti12.tfm" 1136768653 1484 ed72f8f5cf654cda15ecc8e32bfcbee5 ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247596666 32080 340ef9bf63678554ee606688e7b5339d ""
+  "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1247596667 30251 6afa5cb1d0204815a708a080681d4674 ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1247596667 36741 0ee9e374ec3e30da87cdfb0ea3575226 ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1247596666 35469 dcf3a5f2fc1862f5952e3ee5eb1d98c4 ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247596667 32722 d7379af29a190c3f453aba36302ff5a9 ""
@@ -224,10 +225,10 @@
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
   "Questions/Figures/Q1LinearVelocityProfile.png" 1695920856 16126 96e343c7dc25acb6df77d3d859d7738b ""
   "Questions/Figures/Q1ProblemDiagram.png" 1695917155 189484 9cc2edd459e884ed52e5f640c4053c52 ""
-  "Questions/Q1.tex" 1695921660 2413 9371e50dc2014182151e00aa78dc5cb1 ""
+  "Questions/Q1.tex" 1695923234 2862 8d5bcd1e5dab298b5ac4745e0b02ac2e ""
   "c:/Users/User/Documents/School/Year 3/MEC-E-331-Assignments/A1/main.tex" 1695921241 3388 3da7bec5928e175af7448bf884c32379 ""
-  "main.aux" 1695921666 1408 ce0fb3271c981b9d76403b688b59aa95 "pdflatex"
-  "main.out" 1695921666 84 37229119502eb2199a79032d39d66e60 "pdflatex"
+  "main.aux" 1695923237 1515 d6cefc2ae8dfcb447a6275403f07cd46 "pdflatex"
+  "main.out" 1695923237 133 c4f4bf1013f92281ea6574d6929062b8 "pdflatex"
   "main.tex" 1695921241 3388 3da7bec5928e175af7448bf884c32379 ""
   (generated)
   "main.aux"

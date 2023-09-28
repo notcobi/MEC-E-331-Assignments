@@ -7,10 +7,11 @@ plate immersed in oil at any given time is 2-m long and 0.5-m wide. If the
 plate moves through the mid-plane between the surfaces, determine the force
 required to maintain this motion. What would your response be if the plate
 was 1 cm from the bottom surface ($h_2$) and 3 cm from the top surface ($h_1$)?
+
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.5\textwidth]{Questions/Figures/Q1ProblemDiagram.png}
-    \caption{Problem diagram for Question 1.}
+    \caption{Plate moving between two parallel surfaces.}
     \label{fig:Q1ProblemDiagram}
 \end{figure}
 
@@ -19,8 +20,8 @@ was 1 cm from the bottom surface ($h_2$) and 3 cm from the top surface ($h_1$)?
 
 Assumptions:
 \begin{itemize}
-    \item The velocity profile is linear
     \item Oil is a Newtonian fluid
+    \item The velocity profile is linear
 \end{itemize}
 
 Since the velocity profile is linear, the shear stress can be calculated using
@@ -48,10 +49,10 @@ Substituting Equation (\ref{eq:LinearVelocityProfileDerivative}) into Equation
 \begin{align}
     \tau_{top} &= \mu \frac{u_{max}}{h_1} \nonumber \\
         &= 0.9 \frac{5}{0.02} \nonumber \\
-        &= 225 \unit{N/m^2} \nonumber
+        &= \qty{225}{N/m^2} \nonumber
 \end{align}
 
-Similarly, $\tau_{bottom} = -0.09 \unit{N/m^2}$.
+Similarly, $\tau_{bottom} = \qty{225}{N/m^2}$.
 
 The force required to maintain the motion is:
 \begin{align}
@@ -60,18 +61,21 @@ The force required to maintain the motion is:
         &= 225 \unit{N} \nonumber
 \end{align}
 
-By symetry, the force required to maintain the motion is the same for the
+By symmetry, the force required to maintain the motion is the same for the
 bottom surface. Therefore,
 
 \begin{equation*}
-    \boxed{F = 450 \unit{N}}
+    \boxed{F = \qty{450}{\newton}}
 \end{equation*}
 
+\subsection{}
+\textit{The plate is 1 cm from the bottom surface ($h_2$) and 3 cm from the top surface ($h_1$).}
 
-
-
-
-
-
-
-
+By similar methods,
+\begin{align*}
+    F = F_{top} + F_{bottom} &= \tau_{top} A + \tau_{bottom} A \\
+        &= \mu A \left(\frac{u_{max}}{h_1} + \frac{u_{max}}{h_2}\right) \\
+        &= 0.9 \cdot 2 \cdot 0.5 \left(\frac{5}{0.03} + \frac{5}{0.01}\right) \\
+        &= 0.9(166.67 + 500) \\
+        &= \boxed{\qty{600}{\newton}}
+\end{align*}
