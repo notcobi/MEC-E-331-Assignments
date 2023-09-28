@@ -10,28 +10,45 @@ in the pipe pressure?
     \label{fig:Q3ProblemDiagram}
 \end{figure}
 
-For some pressure of water $P_{w}$ and a datum to measure the height of the glycerin $h_2$,
-the pressure balance is given by:
+Assumptions:
+\begin{itemize}
+    \item $x$ is less than $l$
+    \item Density is constant
+    \item The manometer is open to the atmosphere
+\end{itemize}
+
+By conservation of mass, the volume displaced on the right side of the manometer is equal to the volume displaced on the left side of the manometer. 
+
 \begin{align}
-    P_{w, 1} - P_{atm} &= \rho_g g h_2 \label{eq:Q3State1} \\
-    P_{w, 2} - P_{atm} &= \rho_g g (h_2 + \Delta h) \label{eq:Q3State2}
+    \Delta V_{left} &= \Delta V_{right} \nonumber \\
+    \Delta h \left(\frac{\pi}{4} D_{right}^2\right) &= x \left(\frac{\pi}{4} D_{left}^2\right) \nonumber \\
+    \implies x &= \Delta h \left(\frac{D_{right}}{D_{left}}\right)^2 \label{eq:Q3x} \nonumber \\
+    &= 70 \times \left(\frac{3}{30}\right)^2 \nonumber \\
+    &= \qty{0.7}{\milli\meter} \nonumber
 \end{align}
 
-Observe that the width of the manometer does \textbf{not} contribute to the pressure balance.
+In the initial state, the pressure balance going from the water to the air is (look at where the fluid starts and ends; 
+downwards displacement is positive, upwards displacement is negative):
+\begin{equation}
+    P_{w, 1} + \rho_{w} g h_1 + \rho_{g} g (h_2 - h_1) = P_{atm} \label{eq:Q3State1}
+\end{equation}
+
+In the final state, the pressure balance is:
+\begin{equation}
+    P_{w, 2} + \rho_{w} g (h_1 + x) + \rho_{g} g (h_2 - \Delta h - x - h_1) = P_{atm} \label{eq:Q3State2}
+\end{equation}
 
 Subtracting (\ref{eq:Q3State1}) from (\ref{eq:Q3State2}) yields:
 \begin{equation}
-    \Delta P = \rho_g g \Delta h \label{eq:Q3DeltaP}
+    P_{w, 2} - P_{w, 1} = -\rho_{w} g x + \rho_{g} g (\Delta h + x) \label{eq:Q3DeltaP}
 \end{equation}
 
 To find the density of glycerin given SG = 1.26, we can use the following equation:
 \begin{equation}
-    \rho_g = \rho_{H_2O} \times SG = 1000 \times 1.26 = \qty{1260}{\kilogram\per\meter\cubed}
+    \rho_{g} = \rho_{H_2O} \times SG = 1000 \times 1.26 = \qty{1260}{\kilogram\per\meter\cubed} \nonumber
 \end{equation}
 
 Substituting this into (\ref{eq:Q3DeltaP}) yields:
 \begin{equation}
-    \Delta P = 1260 \times 
-    9.81 \times 0.07 
-    = \boxed{\qty{865.2}{\pascal}} \nonumber
+    \Delta P = -1000 \times 9.81 \times \frac{0.7}{1000} + 1260 \times 9.81 \times \frac{70 + 0.7}{1000} = \boxed{\qty{867.0}{\pascal}} \nonumber
 \end{equation}

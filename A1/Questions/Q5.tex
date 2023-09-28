@@ -1,0 +1,42 @@
+\section{}
+A steady, incompressible, two-dimensional velocity field is given by $\vec{V} = (0.523 - 1.88x + 3.94y)\hat{i} 
++ (-2.44 + 1.26x + 1.88y)\hat{j}$, calculate the acceleration at the point $(x, y) = (-1.55, 2.07)$.
+
+Since $\vec{V} = \langle u, v \rangle$ is a function of $(x, y, t)$, the acceleration is given by the multivariable chain rule:
+\begin{align}
+    \vec{a} &= \frac{\partial \vec{V}}{\partial t} \cancel{\frac{d t}{d t}} + 
+    \frac{\partial \vec{V}}{\partial x} \frac{d x}{d t} +
+    \frac{\partial \vec{V}}{\partial y} \frac{d y}{d t} \nonumber \\
+    & = \cancel{\frac{\partial \vec{V}}{\partial t}} +
+    \frac{\partial \vec{V}}{\partial x} u + 
+    \frac{\partial \vec{V}}{\partial y} v \nonumber \\
+    & = 
+    \begin{bmatrix}
+        -1.88 \\
+        1.26
+    \end{bmatrix}
+    u +
+    \begin{bmatrix}
+        3.94 \\
+        1.88
+    \end{bmatrix}
+    v \nonumber \\
+\end{align}
+
+Plugging in the given values to evaluate for $u$ and $v$ at the point $(x, y) = (-1.55, 2.07)$:
+\begin{align}
+    u &= 0.523 - 1.88(-1.55) + 3.94(2.07) \nonumber \\
+    &= 11.5928 \nonumber \\
+    v &= -2.44 + 1.26(-1.55) + 1.88(2.07) \nonumber \\
+    &= -0.5014 \nonumber
+\end{align}
+
+Evaluating for acceleration:
+\begin{empheq}[box=\fbox]{align}
+    \vec{a} &= 
+    \begin{bmatrix}
+        -23.77 \\
+        13.66 
+    \end{bmatrix}
+    [\hat{i} + \hat{j}] \nonumber 
+\end{empheq}
