@@ -1,0 +1,34 @@
+\section{}
+Air enters a nozzle steadily at $\rho = \qty{2.21}{\kilogram\per\meter\cubed}$ and $u = \qty{20}{\meter\per\second}$ and leaves at 
+$\rho = \qty{0.762}{\kilogram\per\meter\cubed}$ and $u = \qty{150}{\meter\per\second}$. If the inlet area of the nozzle is 
+$A_1 = \qty{60}{\centi\meter\squared}$, determine
+
+\begin{enumerate}[label=(\alph*)]
+    \item the mass flow rate through the nozzle, and
+    \item the exit area of the nozzle.
+\end{enumerate}
+
+
+\subsection{}
+First determine the mass flow rate through the nozzle. The mass flow rate is given by:
+
+\[
+\begin{aligned}
+    \dot{m} &= \rho_1 A_1 u_1 \\
+    &= 2.21 \times 60 (0.01)^2 \times 20 \\
+    &= \boxed{\qty{0.265}{\kilogram\per\second}}
+\end{aligned}
+\]
+
+\subsection{}
+Next, determine the exit area of the nozzle. Since mass flow rate is constant throughout the nozzle, 
+the mass flow rate at the exit is the same as the mass flow rate at the inlet. 
+
+\[
+\begin{aligned}
+    A_2 &= \frac{\dot{m}}{\rho_2 u_2} \\
+    &= \frac{0.265}{0.762 \times 0.01^2 \times 150} \\
+    &= \boxed{\qty{23.2}{\centi\meter\squared}}
+\end{aligned}
+\]
+
