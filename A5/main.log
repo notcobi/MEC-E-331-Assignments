@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.9.24) (preloaded format=pdflatex 2023.9.25)  20 OCT 2023 14:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.9.24) (preloaded format=pdflatex 2023.9.25)  2 NOV 2023 22:39
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/Alex/Documents/LaTeX/MEC E 331/MEC-E-331-Assignments/A3/main.tex"
-(c:/Users/Alex/Documents/LaTeX/MEC E 331/MEC-E-331-Assignments/A3/main.tex
+**"c:/Users/Alex/Documents/LaTeX/MEC E 331/MEC-E-331-Assignments/A5/main.tex"
+(c:/Users/Alex/Documents/LaTeX/MEC E 331/MEC-E-331-Assignments/A5/main.tex
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
 (C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -888,19 +888,20 @@ File: translations-basic-dictionary-english.trsl (english translation file `tran
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 74.
  (Questions/Q1.tex
-<Questions/Figures/Q1ProblemDiagram.png, id=26, 457.71pt x 314.67563pt>
-File: Questions/Figures/Q1ProblemDiagram.png Graphic file (type png)
-<use Questions/Figures/Q1ProblemDiagram.png>
-Package pdftex.def Info: Questions/Figures/Q1ProblemDiagram.png  used on input line 7.
-(pdftex.def)             Requested size: 234.8775pt x 161.47636pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 23.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 9.
  (C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 23.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 9.
  (C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
+)) (Questions/Q2.tex) (Questions/Q3.tex
+<Questions/Figures/Q3ProblemDiagram.png, id=18, 303.38344pt x 389.95688pt>
+File: Questions/Figures/Q3ProblemDiagram.png Graphic file (type png)
+<use Questions/Figures/Q3ProblemDiagram.png>
+Package pdftex.def Info: Questions/Figures/Q3ProblemDiagram.png  used on input line 8.
+(pdftex.def)             Requested size: 140.92793pt x 181.1436pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -910,13 +911,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [1{C:/Users/Alex/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
- <./Questions/Figures/Q1ProblemDiagram.png>]) (Questions/Q2.tex
-<Questions/Figures/Q2ProblemDiagram.png, id=44, 468.24937pt x 361.35pt>
-File: Questions/Figures/Q2ProblemDiagram.png Graphic file (type png)
-<use Questions/Figures/Q2ProblemDiagram.png>
-Package pdftex.def Info: Questions/Figures/Q2ProblemDiagram.png  used on input line 12.
-(pdftex.def)             Requested size: 234.8775pt x 181.25902pt.
-
+]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -924,17 +919,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[2 <./Questions/Figures/Q2ProblemDiagram.png>]) (Questions/Q3.tex
-<Questions/Figures/Q3ProblemDiagram.png, id=52, 352.31625pt x 450.18187pt>
-File: Questions/Figures/Q3ProblemDiagram.png Graphic file (type png)
-<use Questions/Figures/Q3ProblemDiagram.png>
-Package pdftex.def Info: Questions/Figures/Q3ProblemDiagram.png  used on input line 15.
-(pdftex.def)             Requested size: 187.89914pt x 240.09274pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 20--21
-
- []
-
+[2 <./Questions/Figures/Q3ProblemDiagram.png>])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -942,42 +927,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[3 <./Questions/Figures/Q3ProblemDiagram.png>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[4])
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[5] (main.aux)
+[3] (main.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: BF672C7227DFCC696C2F390D3B537D09;203.
+(rerunfilecheck)             Checksum: F575326D5F31DF0EA941E70152E6A9ED;105.
  ) 
 Here is how much of TeX's memory you used:
- 42482 strings out of 475247
- 1023504 string characters out of 5758264
- 1936785 words of memory out of 5000000
- 63404 multiletter control sequences out of 15000+600000
- 564738 words of font info for 61 fonts, out of 8000000 for 9000
+ 42445 strings out of 475247
+ 1022498 string characters out of 5758264
+ 1942785 words of memory out of 5000000
+ 63375 multiletter control sequences out of 15000+600000
+ 563627 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 114i,25n,117p,1260b,904s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\Alex\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxfont/line10.pfb>
-Output written on main.pdf (5 pages, 536928 bytes).
+ 114i,26n,117p,1260b,904s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxfont/line10.pfb>
+Output written on main.pdf (3 pages, 115922 bytes).
 PDF statistics:
- 129 PDF objects out of 1000 (max. 8388607)
- 14 named destinations out of 1000 (max. 500000)
- 68 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 81 PDF objects out of 1000 (max. 8388607)
+ 8 named destinations out of 1000 (max. 500000)
+ 42 words of extra memory for PDF output out of 10000 (max. 10000000)
 

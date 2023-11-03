@@ -1,0 +1,21 @@
+\section{}
+% Question 2 of 3 (15 marks): The � velocity component of a steady, two-dimensional 
+% incompressible flow field is � = 3��! − 2���, where � and � are constants. Velocity component 
+% � is unknown. Generate an expression for � as a function of � and �.
+
+The $x$ velocity component of a steady, two-dimensional incompressible flow field is $u = 3ax^2 - 2bxy$, where $a$ and $b$ are constants.
+The $y$ velocity component $v$ is unknown. Generate an expression for $V$ as a function of $x$ and $y$.
+
+\textbf{Solution:} \\
+For an incompressible flow, $\nabla \cdot \vec{V} = 0$. Therefore,
+\begin{align*}
+    \frac{\partial u}{\partial x} + \frac{\partial v}{\partial y} &= 0 \\
+    \frac{\partial}{\partial x} (3ax^2 - 2bxy) + \frac{\partial v}{\partial y} &= 0 \\
+    6ax - 2by + \frac{\partial v}{\partial y} &= 0 \\
+    \frac{\partial v}{\partial y} &= 2by - 6ax \\
+    v &= by^2 - 6axy + f(x)
+\end{align*}
+Therefore, 
+\begin{empheq}[box=\fbox]{align*}
+    \vec{V} &= (3ax^2 - 2bxy) \hat{i} + (by^2 - 6axy + f(x)) \hat{j}
+\end{empheq}

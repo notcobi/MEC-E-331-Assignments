@@ -1,0 +1,21 @@
+\section{}
+Simplify the Navier-Stokes equation as much as possible for the case of incompressible hydrostatics
+(no flow), with gravity acting in the negative z-direction. Begin with the incompressible vector form
+of the Navier-Stokes equation, explain how and why some terms can be simplified, and give your final
+result as a vector equation.
+
+\textbf{Solution:} \\
+The Navier-Stokes equation for incompressible, Newtonian fluids is given by:
+\begin{align*}
+    \rho \frac{D \vec{V}}{Dt} &= -\nabla P + \rho \vec{g} + \mu \nabla^2 \vec{V} \\
+\end{align*}
+
+For the case of incompressible hydrostatics, there is no flow, so $V = 0$. Therefore,
+\begin{align*}
+    \cancel{\rho \frac{D \vec{V}}{Dt}} &= -\nabla P + \rho \vec{g} + \cancel{\mu \nabla^2 \vec{V}} \\
+    \nabla P &= \rho \vec{g} 
+\end{align*}
+Since gravity acts in the negative z-direction, $\vec{g} = -g \hat{k}$,
+\begin{empheq}[box=\fbox]{align*}
+    \frac{\partial P}{\partial x} \hat{i} + \frac{\partial P}{\partial y} \hat{j} + \frac{\partial P}{\partial z} \hat{k} &= -\rho g \hat{k}
+\end{empheq}

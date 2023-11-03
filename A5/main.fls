@@ -1,6 +1,6 @@
-PWD C:\Users\Alex\Documents\LaTeX\MEC E 331\MEC-E-331-Assignments\A3
+PWD C:\Users\Alex\Documents\LaTeX\MEC E 331\MEC-E-331-Assignments\A5
 INPUT C:\Users\Alex\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\Alex\Documents\LaTeX\MEC E 331\MEC-E-331-Assignments\A3\main.tex
+INPUT c:\Users\Alex\Documents\LaTeX\MEC E 331\MEC-E-331-Assignments\A5\main.tex
 OUTPUT main.log
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
@@ -360,15 +360,7 @@ INPUT .\Questions\Q1.tex
 INPUT Questions\Q1.tex
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT .\Questions\Figures\Q1ProblemDiagram.png
-INPUT .\Questions\Figures\Q1ProblemDiagram.png
-INPUT .\Questions\Figures\Q1ProblemDiagram.png
-INPUT .\Questions\Figures\Q1ProblemDiagram.png
-INPUT .\Questions\Figures\Q1ProblemDiagram.png
-INPUT .\Questions\Figures\Q1ProblemDiagram.png
-INPUT .\Questions\Figures\Q1ProblemDiagram.png
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
@@ -392,19 +384,11 @@ INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsb.fd
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
-INPUT C:\Users\Alex\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT .\Questions\Q2.tex
 INPUT .\Questions\Q2.tex
 INPUT .\Questions\Q2.tex
 INPUT .\Questions\Q2.tex
 INPUT Questions\Q2.tex
-INPUT .\Questions\Figures\Q2ProblemDiagram.png
-INPUT .\Questions\Figures\Q2ProblemDiagram.png
-INPUT .\Questions\Figures\Q2ProblemDiagram.png
-INPUT .\Questions\Figures\Q2ProblemDiagram.png
-INPUT .\Questions\Figures\Q2ProblemDiagram.png
-INPUT .\Questions\Figures\Q2ProblemDiagram.png
-INPUT .\Questions\Figures\Q2ProblemDiagram.png
 INPUT .\Questions\Q3.tex
 INPUT .\Questions\Q3.tex
 INPUT .\Questions\Q3.tex
@@ -417,35 +401,23 @@ INPUT .\Questions\Figures\Q3ProblemDiagram.png
 INPUT .\Questions\Figures\Q3ProblemDiagram.png
 INPUT .\Questions\Figures\Q3ProblemDiagram.png
 INPUT .\Questions\Figures\Q3ProblemDiagram.png
-INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
-INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt12.tfm
+INPUT C:\Users\Alex\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT main.aux
 INPUT .\main.out
 INPUT .\main.out
-INPUT C:\Users\Alex\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
-INPUT C:\Users\Alex\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
-INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
-INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
-INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr6.pfb
-INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr6.pfb
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
-INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
-INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
-INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt12.pfb
-INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt12.pfb
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\latxfont\line10.pfb
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\latxfont\line10.pfb
