@@ -15,6 +15,7 @@
 \usepackage{lastpage}
 \usepackage[final]{hyperref}
 \usepackage{parskip}
+\usepackage{nccmath}
 
 \DeclareRobustCommand{\volume}{\text{\volumedash}V}
 \newcommand{\volumedash}{%
@@ -24,7 +25,7 @@
 }
 
 \geometry{letterpaper, portrait, margin=0.5in, footskip=0.25in, top = 0.75in, headsep=0.25in}
-\setlength{\columnsep}{0.5in}
+%\setlength{\columnsep}{0.5in}
 
 \hypersetup{
 	colorlinks=true,       % false: boxed links; true: colored links
@@ -36,18 +37,13 @@
 
 \pagestyle{fancy}
 \fancyhf{}
-\lhead{MEC E 371 Formula Sheet}
+\lhead{MEC E 331 Formula Sheet}
 \chead{Last Updated: \today}
 \rhead{Alex Diep}
 \cfoot{\thepage\ of \pageref{LastPage}}
 %add line for footer 
 % \renewcommand{\footrulewidth}{0.4pt}% default is 0pt
 
-% set default font to sans-serif
-\renewcommand{\familydefault}{\sfdefault}
-
-% set head width = 18cm
-\setlength{\headwidth}{18cm}
 
 % set head height and top = 1.2cm
 \setlength{\headheight}{15pt}
@@ -57,81 +53,77 @@
 %\thispagestyle{empty}
 \begin{multicols*}{2}
 \section*{9. Differential Analysis of Fluid Flow}
-\subsection*{8.1. General Procedure}
+\subsection*{9.1}
 \begin{enumerate}
-    \item a
+    \item Most problems will be simplifiable to 2D or 1D because full form Navier-Stokes equations are too difficult to solve. The art of these 
+    problems is to simplify the equations to a form that can be solved.
+    \item Common assumptions are: steady, laminar, incompressible, constant viscosity, constant pressure, constant temperature, and
+    parallel flow (velocity only in one direction). Gravity typically acts in the negative z-direction (unless it's like an inclined 
+    plane where you'd set your coordinates to be tangential and normal to the plane).
+    \item Check the problem statement for these key words: %steady, laminar, incompressible, constant density, constant viscosity, constant pressure,\
+    \begin{enumerate}[label=\roman*)]
+        \item Steady: All $\frac{\partial}{\partial t} = 0$
+        \item Laminar: Generally implies parallel flow, flow in one direction only.
+        \item Incompressible: $\text{div}(\vec{V}) = \nabla \cdot \vec{V} = 0$, $\frac{\partial \rho}{\partial t} = 0$
+        \item Pressure acts in only one-direction: $\frac{\partial P}{\partial x} = 0$, $\frac{\partial P}{\partial y} = 0$, or $\frac{\partial P}{\partial z} = 0$ 
+        \item Parallel flow: Velocity in the direction of motion is non-zero, velocity in the other directions is zero.
+        \item Gravity only in z-direction: $\vec{g} = -g \hat{k}$
+    \end{enumerate}
+    \item Boundary conditions:
+    \begin{enumerate}[label=\roman*)]
+        \item No-slip: $\vec{V}_{\text{fluid}} = \vec{V}_{\text{boundary}}$ at an interface boundary.
+        \item No-shear at a : $\tau_{\text{fluid}} = \tau_{\text{boundary}} \approx 0$ at a free surface boundary with small surface tension like air.
+    \end{enumerate}
+    \item Try to simplify the continuity equation first. Use the results in simplifying the Navier-Stokes equation.
+    \item Solve for whatever is asked for in the problem statement.
 \end{enumerate}
 
 % Add this to a glossary section later
-\subsection*{8.2. Variable Definitions}
+\subsection*{9.2. Operator Definitions}
 \begin{itemize}
-    \item $\nabla$: The gradient operator, $\nabla = \hat{i} \frac{\partial}{\partial x} + \hat{j} \frac{\partial}{\partial y} + \hat{k} \frac{\partial}{\partial z}$
-    \item $\frac{D}{Dt}$: The material derivative, $\frac{D}{Dt} = \frac{\partial}{\partial t} + \vec{V} \cdot \nabla$
+    \item $\nabla$: The gradient operator, $\nabla = \frac{\partial}{\partial x} \hat{i} + \frac{\partial}{\partial y} \hat{j} + \frac{\partial}{\partial z} \hat{k}$
+    \item $\frac{\partial \vec{V}}{\partial x}$: The vector partial derivative, 
+    $\frac{\partial \vec{V}}{\partial x} = \frac{\partial u}{\partial x} \hat{i} + \frac{\partial v}{\partial x} \hat{j} + \frac{\partial w}{\partial x} \hat{k}$
+    \item $\frac{D}{Dt}$: The material derivative, $\frac{D \vec{T}}{Dt} = \frac{\partial \vec{T}}{\partial t} + (\vec{V} \cdot \nabla) \vec{T}$
+    \footnote[1]{$(\vec{V} \cdot \nabla)$ is the convective derivative operator, not div($\vec{V}$)}
+    \item $(\vec{V} \cdot \nabla)$: The convective derivative, $(\vec{V} \cdot \nabla) \vec{T} = u \frac{\partial \vec{T}}{\partial x} + v \frac{\partial \vec{T}}{\partial y} + w \frac{\partial \vec{T}}{\partial z}$
+    \item $\nabla^2$: The Laplacian operator, $\nabla^2 = \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2}$
+\end{itemize}
+
+\subsection*{9.3 Variable Definitions}
+\begin{itemize}
     \item $\vec{V}$: Velocity vector, $\vec{V} = u \hat{i} + v \hat{j} + w \hat{k}$
-    \item $\nabla^2$: The Laplacian operator
+    \item $\rho$: Density
+    \item $\mu$: Viscosity
     \item $P$: Pressure
 \end{itemize}
 
-\subsection*{8.3. Formulas}
+\subsection*{9.4 Formulas}
 \vspace{-0.4cm}
+\begin{fleqn}
 \begin{align*}
     &\text{Continuity Equation: } \frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \vec{V}) = 0 \\
-    &\text{Cartesian: } \frac{\partial \rho}{\partial t} + \frac{\partial}{\partial x}(\rho u) + \frac{\partial}{\partial y}(\rho v) 
-    + \frac{\partial}{\partial z}(\rho w) = 0 \\
-    &\text{Cylindrical: } \frac{\partial \rho}{\partial t} + \frac{1}{r} \frac{\partial(r \rho u)}{\partial r} + \frac{\partial(\rho v)}{\partial \theta} 
-    + \frac{\partial(\rho w)}{\partial z} = 0 \\
+    % &\text{Cartesian: } \frac{\partial \rho}{\partial t} + \frac{\partial}{\partial x}(\rho u) + \frac{\partial}{\partial y}(\rho v) 
+    % + \frac{\partial}{\partial z}(\rho w) = 0 \\
+    % &\text{Cylindrical: } \frac{\partial \rho}{\partial t} + \frac{1}{r} \frac{\partial(r \rho u)}{\partial r} + \frac{\partial(\rho v)}{\partial \theta} 
+    % + \frac{\partial(\rho w)}{\partial z} = 0 \\
     &\text{Special Case 1: Steady Compressible Flow: } \nabla \cdot (\rho \vec{V}) = 0 \\
-    &\text{Special Case 2: Incompressible Flow: } \nabla \cdot \vec{V} = 0 
+    &\text{Special Case 2: Incompressible Flow: } \nabla \cdot \vec{V} = 0 \\
+    &\text{Incompressible flow, Newtonian, Navier-Stokes Equation:}
 \end{align*}
-Incompressible flow, constant $\mu$, Navier-Stokes Equation:
-\vspace{-0.1cm}
+\end{fleqn}
+\vspace{-1.0cm}
 \begin{align*}
-    \rho \frac{ D \vec{V}}{D t}  &= -\nabla P + \rho \vec{g} + \mu \nabla^2 \vec{V} \\
+    \rho \frac{ D \vec{V}}{D t}  &= -\nabla P + \rho \vec{g} + \mu \nabla^2 \vec{V} 
+\end{align*}
+For example in x-direction:
+\begin{align*}
+    \rho \left(\frac{\partial u}{\partial t} + u \frac{\partial u}{\partial x} + v \frac{\partial u}{\partial y} + w \frac{\partial u}{\partial z}\right) 
+    = &-\frac{\partial P}{\partial x} + \rho g_x \\
+    &+ \mu \left(\frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} + \frac{\partial^2 u}{\partial z^2}\right)
 \end{align*}
 \vspace{-0.5cm}
-Constant $\dot{q}$:
-\begin{align*}
-    T_e &= T_i + \frac{\dot{q}}{\dot{m} c_p} \\ 
-    \dot{q} = h(T_s-T_b)
-\end{align*}
-Constant $T_s$:
-\vspace{-0.5cm}
-\begin{align*}
-    T_e &= T_s - (T_s - T_i) \exp\left(-\frac{\dot{m} C_p}{h A_s}\right) \\
-    T_s &=\frac{T_e - T_i \exp\left(-\frac{\dot{m} C_p}{h A_s}\right)}{1 - \exp\left(-\frac{\dot{m} C_p}{h A_s}\right)} \\
-    \dot{Q} &= h A_s \Delta T_{\text{lm}} \\
-    T_{\text{lm}} &= \frac{T_{i} - T_{e}}{\ln[(T_{s} - T_{e})/(T_{s} - T_{i})]} 
-\end{align*}    
-For fully developed laminar flow, use Table \ref{tab:sec8_fully_developed_laminar}.
-
-For entry region in a circular tube where $T_s = \text{constant}$, use:
-\vspace{-0.5cm}
-\begin{align*}
-    \text{(Edwards et al., 1979) } \text{Nu} = 3.66 + \frac{0.0658(D/L) \text{Re} \text{Pr}}{1 + 0.04[(D/L) \text{Re} \text{Pr}]^{2/3}} 
-\end{align*}
-
-For entry region in a circular tube where the difference between $T_s$ and $T_b$ is large, use:
-\vspace{-0.3cm}
-\begin{align*}
-    \text{(Sieder and Tate, 1936) } &\text{Nu} = 1.86\left(\frac{\text{Re} \text{Pr} D}{L}\right)^{1/3} \left(\frac{\mu_b}{\mu_s}\right)^{0.14} \\
-    0.6 < \text{Pr} < 5, &\quad 0.0044 < \frac{\mu_b}{\mu_s} < 9.75
-\end{align*}
-All properties for Sieder and Tate should be evaluated at $T_b$ except $\mu_s$ which should be evaluated at $T_s$.
-
-For entry region between two isothermal parallel plates, use:
-\vspace{-0.3cm}
-\begin{align*}
-    \text{(Edwards et al., 1979) } &\text{Nu} = 7.54 + \frac{0.03(D_h/L) \text{Re} \text{Pr}}{1 + 0.016[(D_h/L) \text{Re} \text{Pr}]^{2/3}} \\
-    &\text{Re} \leq 2800
-\end{align*}
-For turbulent flow in a circular tube, use:
-\vspace{-0.3cm}
-\begin{align*}
-    \text{(Dittus-Boelter, 1930) } \text{Nu} = 0.023 \text{Re}^{0.8} \text{Pr}^{n}  \\
-    n = 0.4 \; (\text{Heating}), \quad n = 0.3 \; (\text{Cooling}) 
-\end{align*}
-
-\subsection*{8.4 General Terms}
+\subsection*{9.5 General Terms}
 \begin{itemize}
     \item Control volume analysis: A method of analysis in which a volume in space is selected and the conservation of mass, momentum, and energy are applied to the volume
     \item Differential analysis: involves application of differential equations of fluid motion to any and every point in the flow field over a region called the flow domain.
