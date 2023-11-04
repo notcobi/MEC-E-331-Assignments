@@ -36,7 +36,7 @@ Since $w=f(x)$, a normal derivative can be used instead of a partial derivative:
     \implies w(x) &= \frac{\rho g_z}{2 \mu} x^2 + C_1 x + C_2
 \end{align*}
 Boundary conditions are to be specified. At $x=0$, along the wall, the no-slip condition applies, so $u = w = 0$. No shear at
-the free surface, so $\frac{\partial w}{\partial z} = 0$ at $z=h$. Therefore,
+the free surface, so $\frac{\partial w}{\partial x} = 0$ at $x=h$. Therefore,
 \begin{align*}
     w(0) = C_2 \overset{\text{set}}{=} 0 \\
     \frac{\partial w}{\partial x}\bigg|_{x=h} = \frac{\rho g_z}{\mu} h + C_1 \overset{\text{set}}{=} 0 \\
@@ -45,5 +45,6 @@ the free surface, so $\frac{\partial w}{\partial z} = 0$ at $z=h$. Therefore,
 Therefore,
 \begin{empheq}[box=\fbox]{align*}
     u &= 0 \\
+    v &= 0 \\
     w(x) &= \frac{\rho g_z}{2 \mu} x^2 - \frac{\rho g_z h}{\mu} x
 \end{empheq}
