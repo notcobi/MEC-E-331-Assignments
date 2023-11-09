@@ -1,0 +1,68 @@
+\section*{9. Differential Analysis of Fluid Flow}
+\subsection*{9.1 General Procedure}
+\begin{enumerate}
+    \item Most problems will be simplifiable to 2D or 1D because full form Navier-Stokes equations are too difficult to solve. The art of these 
+    problems is to simplify the equations to a form that can be solved.
+    \item Common assumptions are: steady, laminar, incompressible, constant viscosity, constant pressure, constant temperature, and
+    parallel flow (velocity only in one direction). Gravity typically acts in the negative z-direction (unless it's like an inclined 
+    plane where you'd set your coordinates to be tangential and normal to the plane).
+    \item Check the problem statement for these key words: %steady, laminar, incompressible, constant density, constant viscosity, constant pressure,\
+    \begin{enumerate}[label=\roman*)]
+        \item Steady: All $\frac{\partial}{\partial t} = 0$
+        \item Laminar: Generally implies parallel flow, flow in one direction only.
+        \item Incompressible: $\text{div}(\vec{V}) = \nabla \cdot \vec{V} = 0$, $\frac{\partial \rho}{\partial t} = 0$
+        \item Pressure acts in only one-direction: $\frac{\partial P}{\partial x} = 0$, $\frac{\partial P}{\partial y} = 0$, or $\frac{\partial P}{\partial z} = 0$ 
+        \item Parallel flow: Velocity in the direction of motion is non-zero, velocity in the other directions is zero.
+        \item Gravity only in z-direction: $\vec{g} = -g \hat{k}$
+    \end{enumerate}
+    \item Boundary conditions:
+    \begin{enumerate}[label=\roman*)]
+        \item No-slip: $\vec{V}_{\text{fluid}} = \vec{V}_{\text{boundary}}$ at an interface boundary.
+        \item No-shear at a : $\tau_{\text{fluid}} = \tau_{\text{boundary}} \approx 0$ at a free surface boundary with small surface tension like air.
+    \end{enumerate}
+    \item Try to simplify the continuity equation first. Use the results in simplifying the Navier-Stokes equation.
+    \item Solve for whatever is asked for in the problem statement.
+\end{enumerate}
+
+% Add this to a glossary section later
+\subsection*{9.2. Operator Definitions}
+\begin{itemize}
+    \item $\nabla$: The gradient operator, $\nabla = \frac{\partial}{\partial x} \hat{i} + \frac{\partial}{\partial y} \hat{j} + \frac{\partial}{\partial z} \hat{k}$
+    \item $\frac{\partial \vec{V}}{\partial x}$: The vector partial derivative, 
+    $\frac{\partial \vec{V}}{\partial x} = \frac{\partial u}{\partial x} \hat{i} + \frac{\partial v}{\partial x} \hat{j} + \frac{\partial w}{\partial x} \hat{k}$
+    \item $\frac{D}{Dt}$: The material derivative, $\frac{D \vec{T}}{Dt} = \frac{\partial \vec{T}}{\partial t} + (\vec{V} \cdot \nabla) \vec{T}$
+    \footnote[1]{$(\vec{V} \cdot \nabla)$ is the convective derivative operator, not div($\vec{V}$)}
+    \item $(\vec{V} \cdot \nabla)$: The convective derivative, $(\vec{V} \cdot \nabla) \vec{T} = u \frac{\partial \vec{T}}{\partial x} + v \frac{\partial \vec{T}}{\partial y} + w \frac{\partial \vec{T}}{\partial z}$
+    \item $\nabla^2$: The Laplacian operator, $\nabla^2 = \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2}$
+\end{itemize}
+
+\subsection*{9.3 Variable Definitions}
+\begin{itemize}
+    \item $\vec{V}$: Velocity vector, $\vec{V} = u \hat{i} + v \hat{j} + w \hat{k}$
+    \item $\rho$: Density
+    \item $\mu$: Viscosity
+    \item $P$: Pressure
+\end{itemize}
+
+\subsection*{9.4 Formulas}
+\begin{fleqn}
+\begin{align*}
+    &\text{Continuity Equation: } \frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \vec{V}) = 0 \\
+    % &\text{Cartesian: } \frac{\partial \rho}{\partial t} + \frac{\partial}{\partial x}(\rho u) + \frac{\partial}{\partial y}(\rho v) 
+    % + \frac{\partial}{\partial z}(\rho w) = 0 \\
+    % &\text{Cylindrical: } \frac{\partial \rho}{\partial t} + \frac{1}{r} \frac{\partial(r \rho u)}{\partial r} + \frac{\partial(\rho v)}{\partial \theta} 
+    % + \frac{\partial(\rho w)}{\partial z} = 0 \\
+    &\text{Special Case 1: Steady Compressible Flow: } \nabla \cdot (\rho \vec{V}) = 0 \\
+    &\text{Special Case 2: Incompressible Flow: } \nabla \cdot \vec{V} = 0 \\
+    &\text{Incompressible flow, Newtonian, Navier-Stokes Equation:}
+\end{align*}
+\end{fleqn}
+\begin{align*}
+    \rho \frac{ D \vec{V}}{D t}  &= -\nabla P + \rho \vec{g} + \mu \nabla^2 \vec{V} 
+\end{align*}
+For example in x-direction:
+\begin{align*}
+    \rho \left(\frac{\partial u}{\partial t} + u \frac{\partial u}{\partial x} + v \frac{\partial u}{\partial y} + w \frac{\partial u}{\partial z}\right) 
+    = &-\frac{\partial P}{\partial x} + \rho g_x \\
+    &+ \mu \left(\frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} + \frac{\partial^2 u}{\partial z^2}\right)
+\end{align*}

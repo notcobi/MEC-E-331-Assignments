@@ -1,0 +1,25 @@
+\section*{6. Momentum Analysis of Flow Systems}
+\subsection*{6.1 General Procedure}
+\begin{enumerate}
+    \item Utilize the Bernoulli equation to obtain the $P_{1, \text{gage}}$
+    \item $\sum \vec{F}$ represents external forces acting on the system. Some examples are:
+    \begin{enumerate}[label=\roman*)]
+        \item Pressure: $P_{1, \text{gage}} A_1$
+        \item Reaction force: $F_{R}$
+    \end{enumerate}
+    \item Use momentum equation to obtain forces. For uniform flow, $\beta = 1$.  If not given, 
+    it is expected to assume uniform flow.
+\end{enumerate}
+
+\subsection*{6.2 Variable Definitions}
+\begin{itemize}
+    \item $\beta$: Momentum-flux correction factor. It's a correction factor for the surface integral.
+\end{itemize}
+
+\subsection*{6.3 Formulas}
+\begin{fleqn}
+    \begin{align*}
+        &\text{Momentum Equation: } \sum \vec{F} = \sum_{\text{out}} \beta \dot{m} \vec{V} - \sum_{\text{in}} \beta \dot{m} \vec{V} \\
+        &\text{Momentum Correction Factor: } \beta = \frac{1}{A_c} \int_{A_c} \left(\frac{V}{V_{\text{avg}}}\right)^2 dA_c 
+    \end{align*}
+\end{fleqn}

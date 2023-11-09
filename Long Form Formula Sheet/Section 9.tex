@@ -1,59 +1,5 @@
-% Formula sheet for MEC E 331 Fluid mechanics 1
-% Two column format
-
-\documentclass[10pt]{article}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{multicol}
-\usepackage{geometry}
-\usepackage{fancyhdr}
-\usepackage{siunitx}
-\usepackage{enumitem}
-\usepackage{multicol}
-\usepackage{graphicx}
-\usepackage{multirow}
-\usepackage{lastpage}
-\usepackage[final]{hyperref}
-\usepackage{parskip}
-\usepackage{nccmath}
-
-\DeclareRobustCommand{\volume}{\text{\volumedash}V}
-\newcommand{\volumedash}{%
-  \makebox[0pt][l]{%
-    \ooalign{\hfil\hphantom{$\m@th V$}\hfil\cr\kern0.08em--\hfil\cr}%
-  }%
-}
-
-\geometry{letterpaper, portrait, margin=0.5in, footskip=0.25in, top = 0.75in, headsep=0.25in}
-%\setlength{\columnsep}{0.5in}
-
-\hypersetup{
-	colorlinks=true,       % false: boxed links; true: colored links
-	linkcolor=blue,        % color of internal links
-	citecolor=blue,        % color of links to bibliography
-	filecolor=magenta,     % color of file links
-	urlcolor=blue         
-}
-
-\pagestyle{fancy}
-\fancyhf{}
-\lhead{MEC E 331 Formula Sheet}
-\chead{Last Updated: \today}
-\rhead{Alex Diep}
-\cfoot{\thepage\ of \pageref{LastPage}}
-%add line for footer 
-% \renewcommand{\footrulewidth}{0.4pt}% default is 0pt
-
-
-% set head height and top = 1.2cm
-\setlength{\headheight}{15pt}
-
-\begin{document}
-%\maketitle
-%\thispagestyle{empty}
-\begin{multicols*}{2}
 \section*{9. Differential Analysis of Fluid Flow}
-\subsection*{9.1}
+\subsection*{9.1 General Procedure}
 \begin{enumerate}
     \item Most problems will be simplifiable to 2D or 1D because full form Navier-Stokes equations are too difficult to solve. The art of these 
     problems is to simplify the equations to a form that can be solved.
@@ -128,6 +74,3 @@ For example in x-direction:
     \item Control volume analysis: A method of analysis in which a volume in space is selected and the conservation of mass, momentum, and energy are applied to the volume
     \item Differential analysis: involves application of differential equations of fluid motion to any and every point in the flow field over a region called the flow domain.
 \end{itemize}
-
-\end{multicols*}
-\end{document}

@@ -1,0 +1,51 @@
+\section*{10. Boundary Layer Approximation}
+\subsection*{10.1 General Procedure}
+\begin{enumerate}
+    \item Identify the type of flow using the Reynolds number. If the Re $> 5 \times 10^5$, the flow is turbulent. If the Re $< 5 \times 10^5$, the flow is laminar.
+    \item If you need to use the Navier-stokes equations, the boundary conditions are 
+    \begin{enumerate}[label=\roman*)]
+        \item No slip at wall ($u = v = 0$ at $y = 0$) 
+        \item Known outer flow $u \to U$ as $y \to \infty$.
+        \item Starting profile $u = u_{\text{starting}}(y)$ at $x = x_{\text{starting}}$.
+    \end{enumerate}
+    \item Use Table \ref{tab:boundary_layer_approximation} to determine whatever you need.
+\end{enumerate}
+
+\subsection*{10.2 Variable Definitions}
+\begin{itemize}
+    \item $\nu$: Kinematic viscosity
+    \item $\mu$: Dynamic viscosity
+    \item $U$: Velocity of the free stream
+\end{itemize}
+
+\subsection*{10.3 Formulas}
+\begin{fleqn}
+    \begin{align*}
+        &\text{Reynolds Number: } \text{Re}_x = \frac{\rho V x}{\mu}  = \frac{V x}{\nu} \\
+        &\text{Boundary Layer Thickness: } \frac{\delta}{x} = 4.91 \sqrt{\text{Re}_x} \\
+        &\text{Wall Shear Stress: } \tau_w = \frac{0.332 \rho U^2}{\sqrt{\text{Re}_x}} \\
+        &\text{Local Friction Coefficient: } C_f = \frac{\tau_w}{\frac{1}{2} \rho U^2} = \frac{0.664}{\sqrt{\text{Re}_x}} \\
+        &\text{Displacement Thickness: } \delta^* = \int_0^\infty \left(1 - \frac{u}{U}\right) dy = \frac{1.72 x}{\sqrt{\text{Re}_x}} \\
+        &\text{Momentum Thickness: } \theta = \int_0^\infty \frac{u}{U} \left(1 - \frac{u}{U}\right) dy = \frac{0.664 x}{\sqrt{\text{Re}_x}} \\   
+        &\text{Drag Force: } F_D = \int_A \tau_w dA = \int_0^L \tau_w w dx \\
+        &\text{Continuity Equation: } \frac{\partial u}{\partial x} + \frac{\partial v}{\partial y} = 0 \\
+        &\text{Momentum Equation: } u \frac{\partial u}{\partial x} + v \frac{\partial u}{\partial y} = U \frac{dU}{dx} + \nu \frac{\partial^2 u}{\partial y^2} \\
+    \end{align*}
+\end{fleqn}
+
+\begin{table}[H]
+    \caption{Boundary Layer Approximation}
+    \label{tab:boundary_layer_approximation}
+    \centering
+    \begin{tabular}{ccc}
+        \hline
+        Property & Laminar & Turbulent \\
+        \hline
+        {\tiny Boundary Layer Thickness} & $\frac{\delta}{x} = 4.91 \sqrt{\text{Re}_x}$ & $\frac{\delta}{x} = \frac{0.16}{(\text{Re}_x)^{1/7}}$ \\
+        {\tiny Displacement Thickness} & $\frac{\delta^*}{x} = \frac{1.72}{\sqrt{\text{Re}_x}}$ & $\frac{\delta^*}{x} = \frac{0.020}{(\text{Re}_x)^{1/7}}$ \\
+        {\tiny Momentum Thickness} & $\frac{\theta}{x} = \frac{0.664}{\sqrt{\text{Re}_x}}$ & $\frac{\theta}{x} = \frac{0.016}{(\text{Re}_x)^{1/7}}$ \\   
+        {\tiny Local Friction Coefficient} & $C_f = \frac{0.664}{\sqrt{\text{Re}_x}}$ & $C_f = \frac{0.027}{(\text{Re}_x)^{1/7}}$ \\
+        {\tiny Wall Shear Stress} & $\tau_w = \frac{0.332 \rho U^2}{\sqrt{\text{Re}_x}}$ & $\tau_w = \frac{0.013 \rho U^2}{(\text{Re}_x)^{1/7}}$ \\
+        \hline
+    \end{tabular}
+\end{table}
