@@ -338,8 +338,14 @@ INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sy
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
-OUTPUT main.out
+INPUT .\main.out
+INPUT .\main.out
+INPUT main.out
+INPUT main.out
 OUTPUT main.pdf
+INPUT .\main.out
+INPUT .\main.out
+OUTPUT main.out
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\ninecolors\ninecolors.sty
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\ninecolors\ninecolors.sty
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
@@ -385,7 +391,6 @@ INPUT .\Questions\Q2.tex
 INPUT .\Questions\Q2.tex
 INPUT Questions\Q2.tex
 INPUT C:\Users\Alex\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
-INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT .\Questions\Figures\Q2Graph.png
 INPUT .\Questions\Figures\Q2Graph.png
 INPUT .\Questions\Figures\Q2Graph.png
