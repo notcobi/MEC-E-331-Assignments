@@ -1,0 +1,34 @@
+\section{}
+% A small aircraft has a wing area of 35 m2
+% , a lift coefficient of 0.45 at 
+% takeoff settings, and a total mass of 4000 kg. Determine (a) the takeoff speed of this aircraft at sea 
+% level at standard atmospheric conditions and (b) the required power to maintain a constant cruising 
+% speed of 300 km/h for a cruising drag coefficient 0.035. (�!"# = 1.225 ��/�$)
+A small aircraft has a wing area of 35 m$^2$, a lift coefficient of 0.45 at takeoff settings, and a 
+total mass of 4000 kg. Determine (a) the takeoff speed of this aircraft at sea level at standard 
+atmospheric conditions and (b) the required power to maintain a constant cruising speed of 300 km/h 
+for a cruising drag coefficient 0.035. ($\rho$ = 1.225 kg/m$^3$)
+
+\subsection{}
+There are two forces acting on the aircraft during takeoff: lift and weight. Then
+\begin{align*}
+    F_L &= F_W \\
+    \frac{1}{2} \rho V^2 S C_L &= mg \\
+\end{align*}
+Solving for $V$,
+\begin{align*}
+    V &= \sqrt{\frac{2mg}{\rho S C_L}} \\
+        &= \sqrt{\frac{2(4000)(9.81)}{(1.225)(35)(0.45)}} \\
+        &= 63.778 \text{ m/s}
+\end{align*}
+
+\subsection{}
+During cruising, in the tangent direction, the force is drag. Thus,
+\begin{align*}
+    \dot{W} &= F_D V \\
+    &= \frac{1}{2} \rho V^3 A C_D \\
+    &= \frac{1}{2} (1.225) (300 \times 1000/3600) (35) (0.035) \\
+    &= 434.2 \text{ kW}
+\end{align*}
+
+
