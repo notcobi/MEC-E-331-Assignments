@@ -1,0 +1,25 @@
+\section{}
+Oil with a density of 850 kg/m$^3$ and kinematic viscosity of 0.00062 m$^2$/s is being discharged by an 8-mm-diameter, 
+40-m-long horizontal pipe from a storage tank open to the atmosphere. The height of the liquid level above the center 
+of the pipe is 4 m. Disregarding the minor losses, determine the flow rate of oil through the pipe.
+
+Assume the flow is laminar. We will verify this assumption later.
+
+For flow in a laminar horizontal pipe, 
+\begin{align*}
+    \dot{V} &= \frac{\Delta P \pi D^4}{128 \mu L} 
+\end{align*}
+Since $\mu =\rho \nu$ and the pressure drop for an open tank is $\Delta P = \rho g h$, we have
+\begin{align*}
+    \dot{V} &= \frac{\rho g h \pi D^4}{128 \rho \nu L} \\
+    &= \frac{g h \pi D^4}{128 \nu L} \\
+    &= \frac{9.81 \times 4 \times \pi \times (0.008)^4}{128 \times 0.00062 \times 40} \\
+    &= \boxed{1.591 \times 10^{-7} \text{ m}^3/\text{s}}
+\end{align*}
+This corresponds to a velocity of $v = \frac{\dot{V}}{\pi D^2/4} = 0.00316$ m/s. The Reynolds number is
+\begin{align*}
+    \text{Re} &= \frac{v D}{\nu} \\
+    &= \frac{0.00316 \times 0.008}{0.00062} \\
+    &= \boxed{0.04077}
+\end{align*}
+Since this is less than the critical Reynolds number of 2300, the flow is laminar, and our assumption is valid.

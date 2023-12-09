@@ -1,0 +1,50 @@
+\section{}
+% Water at 10℃ (� = 999.7 !"
+% #! ��� � = 1.307 × 10$% ��/�& ∙ �) is 
+% flowing steadily in a 0.12-cm-diameter, 15-m-long pipe at an average velocity of 0.9 m/s. 
+% Determine (a) the pressure drop, (b) the head loss, and (c) the pumping power requirement to 
+% overcome this pressure drop.
+
+Water at 10$^{\circ}$C ($\rho$ = 999.7 kg/m$^3$ and $\mu$ = 1.307 $\times$ 10$^{-3}$ N$\cdot$s/m$^2$) is 
+flowing steadily in a 0.12-cm-diameter, 15-m-long pipe at an average velocity of 0.9 m/s. 
+Determine (a) the pressure drop, (b) the head loss, and (c) the pumping power requirement to overcome this pressure drop.
+
+\subsection{}
+
+First, find the Reynolds number
+\begin{align*}
+    \text{Re} &= \frac{\rho v D}{\mu} \\
+    &= \frac{999.7 \times 0.9 \times 0.0012}{1.307 \times 10^{-3}} \\
+    &= 826.07
+\end{align*}
+Since this is less than the critical Reynolds number of 2300, the flow is laminar.
+
+For laminar flow in a circular pipe, the friction factor is given by
+\begin{align*}
+    f &= \frac{64}{\text{Re}} \\
+    &= \frac{64}{826.07} \\
+    &= 0.077475
+\end{align*}
+Then, the pressure drop is given by
+\begin{align*}
+    \Delta P &= f \frac{L}{D} \frac{\rho v^2}{2} \\
+    &= 0.077475 \times \frac{15}{0.0012} \times \frac{999.7 \times 0.9^2}{2} \\
+    &= 392099.522344 \\
+    &= \boxed{392 \text{ kPa}}
+\end{align*}
+
+\subsection{}
+Head loss is given by
+\begin{align*}
+    h_L &= \frac{\Delta P}{\rho g} \\
+    &= \frac{392099.522344}{999.7 \times 9.81} \\
+    &= \boxed{39.98 \text{ m}}
+\end{align*}
+
+\subsection{}
+Pumping power is given by
+\begin{align*}
+    \dot{W}_{\text{pump}, L} = \dot{V}\Delta P &= \frac{\pi D^2}{4} v \Delta P \\
+    &= \frac{\pi (0.0012)^2}{4} \times 0.9 \times 392099.522344 \\
+    &= \boxed{0.3991 \text{ W}}
+\end{align*}

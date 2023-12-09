@@ -1,0 +1,59 @@
+\section{}
+% A horizontal pipe has an abrupt expansion from D1=5 cm to D2 =10 
+% cm. The water velocity in the smaller section is 8 m/s and the flow is turbulent. The pressure in 
+% the smaller section is P1 = 410 kPa. Taking the kinetic energy correction factor to be 1.06 at both 
+% the inlet and the outlet, determine the downstream pressure P2, and estimate the error that would 
+% have occurred if Bernoulli’s equation had been used
+
+A horizontal pipe has an abrupt expansion from $D_1 = 5$ cm to $D_2 = 10$ cm. The water velocity in the smaller section is 
+8 m/s and the flow is turbulent. The pressure in the smaller section is $P_1 = 410$ kPa. Taking the kinetic energy correction 
+factor to be 1.06 at both the inlet and the outlet, determine the downstream pressure $P_2$, and estimate the error that would 
+have occurred if Bernoulli's equation had been used.
+
+The energy equation is
+\begin{gather*}
+    \frac{P_1}{\rho g} + \alpha_1 \frac{v_1^2}{2g} + z_1 + h_{\text{pump}, u} 
+    = \frac{P_2}{\rho g} + \alpha_2 \frac{v_2^2}{2g} + z_2 + h_{\text{turbine}, e} + h_L
+\end{gather*}
+Since $\alpha_1 = \alpha_2 = 1.06$, $z_1 = z_2$, $h_{\text{pump}, u} = h_{\text{turbine}, e} = 0$, 
+\begin{gather*}    
+    \frac{P_1}{\rho g} + \alpha \frac{v_1^2}{2g} = \frac{P_2}{\rho g} + \alpha \frac{v_2^2}{2g} + h_L\\
+    \implies P_2 = P_1 + \rho \left(\alpha \frac{v_1^2 - v_2^2}{2} - g h_L\right)
+\end{gather*}
+The loss coefficient for an abrupt expansion is given by
+\begin{align*}
+    K_L &= \alpha \left(1 - \left(\frac{D_1}{D_2}\right)^2\right)^2\\
+    &= 1.06 \left(1 - \left(\frac{0.05}{0.1}\right)^2\right)^2\\
+    &= 0.59625
+\end{align*}
+Then, the head loss is given by
+\begin{align*}
+    h_L &= K_L \frac{v_1^2}{2g} \\
+    &= 0.59625 \times \frac{8^2}{2 \times 9.81} \\
+    &= 1.9450 \text{ m}
+\end{align*}
+$v_2$ is given by the continuity equation
+\begin{align*}
+    v_2 &= \frac{A_1}{A_2} v_1 \\
+    &= \frac{D_1^2}{D_2^2} v_1 \\
+    &= \frac{0.05^2}{0.1^2} \times 8 \\
+    &= 2 \text{ m/s}
+\end{align*}
+Finally, the downstream pressure $P_2$ is given by
+\begin{align*}
+    P_2 &= P_1 + \rho \left(\alpha \frac{v_1^2 - v_2^2}{2} - g h_L\right) \\
+    &= 410 \times 10^3 + 1000 \times \left(1.06 \times \frac{8^2 - 2^2}{2} - 9.81 \times 1.9450\right) \\
+    &= \boxed{422.7 \text{ kPa}}
+\end{align*}
+The Bernoulli equation can be found by modifying the energy equation to let $\alpha = 1$, $h_{\text{pump}, u} = h_{\text{turbine}, e} = 0$, and $h_L = 0$. 
+Arising,
+\begin{align*}
+    P_2 &= P_1 + \rho \left(\frac{v_1^2 - v_2^2}{2}\right) \\
+    &= 410 \times 10^3 + 1000 \times \left(\frac{8^2 - 2^2}{2}\right) \\
+    &= \boxed{440 \text{ kPa}}
+\end{align*}
+The error is
+\begin{align*}
+    \text{err} &= 440 - 422.7 = \boxed{17.3 \text{ kPa}} \\
+    \% \text{err} &= \frac{440 - 422.7}{422.7} \times 100\% = \boxed{4.09\%}
+\end{align*}
