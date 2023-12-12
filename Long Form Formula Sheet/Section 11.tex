@@ -1,0 +1,40 @@
+\section*{11. External Flow: Drag and Lift}
+\subsection*{11.1 General Procedure}
+\begin{enumerate}
+    \item Determine whether to consider drag and/or lift.
+    \item Find the Reynolds number, Re$_x$ to determine whether the flow is laminar or turbulent.
+    \item Determine the drag coefficient, $C_D$ using a table.
+    \item Make sure to use the frontal area for drag and planform area for lift.
+    \item If a composite body is given, use superposition, i.e. $C_D = \sum C_{D_i}$.
+\end{enumerate}
+
+\subsection*{11.2 Variable Definitions and Terms}
+\begin{itemize}
+    \item $F_D$ = Drag force, the force component in the direction of the flow velocity.
+    \item $F_L$ = Lift force, the force component normal to the flow velocity.
+    \item Frontal Area = The area projected onto a plane normal to the flow direction.
+    \item Planform Area = The area seen by a person looking down on the object.
+    \item Pressure drag = The difference between the high pressure in the front stagnation region and the 
+    low pressure in the shear separated region causes a large drag contribution
+    \item Skin friction drag = Drag induced by $\tau_w$.
+    \item Flow separation = At sufficiently high velocities, the fluid stream detaches itself from the 
+    surface of the body.
+    \item Seperated region = The low pressure region behind the body where recirculating and backflows occur
+    \item Wake = The region of flow trailing the body where the effects of the body on velocity are felt
+    \item The Magnus effect = The phenomenon of producing lift by the rotation of a solid body
+\end{itemize}
+
+\subsection*{11.3 Formulas}
+Drag, $F_D$:
+\begin{align*}
+    C_{D, \text{friction}} &= \frac{2 F_{D, \text{friction}}}{\rho \dot{x}^2 A} \\
+    C_{D, \text{pressure}} &= \frac{2 F_{D, \text{pressure}}}{\rho \dot{x}^2 A} \\
+    C_D &= C_{D, \text{friction}} + C_{D, \text{pressure}} \\
+    F_D &= F_{D, \text{friction}} + F_{D, \text{pressure}} \\
+    W_{D} &= F_D \dot{x}
+\end{align*}
+Lift, $F_L$:
+\begin{align*}
+    F_L = \frac{1}{2} \rho \dot{x}^2 A C_L
+\end{align*}
+

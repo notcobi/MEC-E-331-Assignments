@@ -6,11 +6,23 @@
 \end{enumerate}
 
 \subsection*{10.2 Variable Definitions}
+\begin{itemize}
+    \item Re$_x$ = Reynolds number, the ratio of inertial forces to viscous forces, at $x$
+    \item $\delta$ = Boundary layer thickness is the distance from the wall to the point where the velocity is 99\% of the free stream velocity.
+    \item $\delta*$ = Displacement thickness is the distance that a streamline just outside 
+    of the boundary layer is deflected away from the wall due to the effect 
+    of the boundary layer.
+    \item $\theta$ = Momentum thickness, defined as the loss of momentum flux per unit width decided by $\rho U^2$
+    due to the presence of the growing boundary layer.
+    \item $\tau_w$ = Wall shear stress, the force per unit area exerted by the fluid on the wall.
+    \item $C_f$ = Local friction coefficient, the ratio of the wall shear stress to the dynamic pressure.
+    \item 
+\end{itemize}
 
 \subsection*{10.3 Formulas}
 \begin{fleqn}
     \begin{align*}
-        &\text{Reynolds Number: } \text{Re}_x = \frac{\rho V x}{\mu}  = \frac{V x}{\nu} \\
+        &\text{Re}_x = \frac{\rho V x}{\mu}  = \frac{V x}{\nu} \\
         &\text{Boundary Layer Thickness: } \frac{\delta}{x} = 4.91 \sqrt{\text{Re}_x} \\
         &\text{Wall Shear Stress: } \tau_w = \frac{0.332 \rho U^2}{\sqrt{\text{Re}_x}} \\
         &\text{Local Friction Coefficient: } C_f = \frac{\tau_w}{\frac{1}{2} \rho U^2} = \frac{0.664}{\sqrt{\text{Re}_x}} \\
@@ -23,18 +35,18 @@
 \end{fleqn}
 
 \begin{table}[H]
-    \caption{Boundary Layer Approximation}
+    \caption{Boundary Layer Approximation for flat plate.}
     \label{tab:boundary_layer_approximation}
     \centering
-    \begin{tabular}{ccc}
+    \begin{tabular}{cc}
         \hline
-        Property & Laminar & Turbulent \\
+        Laminar & Turbulent \\
         \hline
-        Boundary Layer Thickness & $\frac{\delta}{x} = 4.91 \sqrt{\text{Re}_x}$ & $\frac{\delta}{x} = \frac{0.16}{(\text{Re}_x)^{1/7}}$ \\
-        Displacement Thickness & $\frac{\delta^*}{x} = \frac{1.72}{\sqrt{\text{Re}_x}}$ & $\frac{\delta^*}{x} = \frac{0.020}{(\text{Re}_x)^{1/7}}$ \\
-        Momentum Thickness & $\frac{\theta}{x} = \frac{0.664}{\sqrt{\text{Re}_x}}$ & $\frac{\theta}{x} = \frac{0.016}{(\text{Re}_x)^{1/7}}$ \\   
-        Local Friction Coefficient & $C_f = \frac{0.664}{\sqrt{\text{Re}_x}}$ & $C_f = \frac{0.027}{(\text{Re}_x)^{1/7}}$ \\
-        Wall Shear Stress & $\tau_w = \frac{0.332 \rho U^2}{\sqrt{\text{Re}_x}}$ & $\tau_w = \frac{0.013 \rho U^2}{(\text{Re}_x)^{1/7}}$ \\
+        $\frac{\delta}{x} = 4.91 \sqrt{\text{Re}_x}$ & $\frac{\delta}{x} = \frac{0.16}{(\text{Re}_x)^{1/7}}$ \\
+        $\frac{\delta^*}{x} = \frac{1.72}{\sqrt{\text{Re}_x}}$ & $\frac{\delta^*}{x} = \frac{0.020}{(\text{Re}_x)^{1/7}}$ \\
+        $\frac{\theta}{x} = \frac{0.664}{\sqrt{\text{Re}_x}}$ & $\frac{\theta}{x} = \frac{0.016}{(\text{Re}_x)^{1/7}}$ \\   
+        $C_f = \frac{0.664}{\sqrt{\text{Re}_x}}$ & $C_f = \frac{0.027}{(\text{Re}_x)^{1/7}}$ \\
+        $\tau_w = \frac{0.332 \rho U^2}{\sqrt{\text{Re}_x}}$ & $\tau_w = \frac{0.013 \rho U^2}{(\text{Re}_x)^{1/7}}$ \\
         \hline
     \end{tabular}
 \end{table}

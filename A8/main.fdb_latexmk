@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1702104091 "c:/Users/Alex/Documents/LaTeX/MEC E 331/MEC-E-331-Assignments/A8/main.tex" "main.pdf" "main" 1702104093 0
+["pdflatex"] 1702105742 "c:/Users/Alex/Documents/LaTeX/MEC E 331/MEC-E-331-Assignments/A8/main.tex" "main.pdf" "main" 1702105745 0
   "C:/Users/Alex/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1701146951 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/Alex/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1695700950 24141477 601480e762a236c8fe40ab3309037a0b ""
   "C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -225,10 +225,10 @@
   "C:/Users/Alex/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
   "Questions/Q1.tex" 1702101150 1838 cd38c76c2bb22e03dd575ba6fa8cc26b ""
   "Questions/Q2.tex" 1702104005 1277 930a08ff33f6e21020468a951babcc11 ""
-  "Questions/Q3.tex" 1702104088 2908 2d262eb1f020fcb6699a0fd6e9d9c220 ""
+  "Questions/Q3.tex" 1702105741 2908 2d262eb1f020fcb6699a0fd6e9d9c220 ""
   "c:/Users/Alex/Documents/LaTeX/MEC E 331/MEC-E-331-Assignments/A8/main.tex" 1697770581 3404 b53ba14624f3dfa7e74abeae4086eb8b ""
-  "main.aux" 1702104093 1193 63d0dd1d7999cf565b7ae9decdbd70cb "pdflatex"
-  "main.out" 1702104093 252 07eb5457db43fc86fc7ba5cac7470ac2 "pdflatex"
+  "main.aux" 1702105745 1193 63d0dd1d7999cf565b7ae9decdbd70cb "pdflatex"
+  "main.out" 1702105745 252 07eb5457db43fc86fc7ba5cac7470ac2 "pdflatex"
   (generated)
   "main.aux"
   "main.log"

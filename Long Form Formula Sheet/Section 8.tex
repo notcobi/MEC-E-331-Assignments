@@ -1,0 +1,50 @@
+\section*{8. Internal Flow: Pipes and Ducts}
+\subsection*{8.2 Variable Definitions}
+\begin{itemize}
+    \item Pressure drop: A pressure drop due to viscous effects represents an irreversible pressure loss
+    \item Head loss: Additional height that the fluid needs to be raised by a pump in order to overcome the frictional losses in the pipe
+    \item Major loss: The viscous (frictional) losses for fully-developed flow through straight pipe section
+    \item Minor loss: Additional losses at the pipe. 
+    \item $K_L$ = Loss coefficient
+    \item $\alpha$ = Kinetic energy correction factor
+\end{itemize}
+
+\subsection*{8.3 Formulas}
+\begin{align*}
+    D_h &= \frac{4A_c}{\text{wetted perimeter}} \\
+    \text{Re} &= \frac{\rho V D_h}{\mu} \\
+    L_{h, \text{laminar}} &= 0.05 \text{Re} D \\
+    L_{h, \text{turbulent}} &= 10D
+\end{align*}
+Pressure stuff
+\begin{align*}
+    \Delta P &= \frac{32 \mu L \dot{x}_{\text{avg}}}{D^2}, \; \text{Laminar} \\
+    \Delta P_L &= f \frac{L}{D} \frac{\rho \dot{x}_{\text{avg}}^2}{2}, \; \text{Either} \\
+    h_L &= f \frac{L}{D} \frac{\dot{x}_{\text{avg}}^2}{2g}, \; \text{Either} \\
+    f &= \frac{8\tau_w}{\rho \dot{x}_{\text{avg}}^2} \overset{\text{laminar}}{=} \frac{64}{\text{Re}}
+\end{align*}
+Horizontal pipe, laminar (Re$<2300$):
+\begin{align*}
+    \dot{x}_{\text{avg}} &= \frac{\Delta P D^2}{32 \mu L} \\
+    \dot{V}_{\text{avg}} &= \frac{\Delta P \pi D^4}{128 \mu L} 
+\end{align*}
+Turbulent flow through pipe:
+\begin{align*}
+    \frac{1}{\sqrt{f}} &= -2 \log_{10} \left(\frac{\epsilon}{3.7D} + \frac{2.51}{\text{Re} \sqrt{f}}\right) \\
+\end{align*}    
+Energy equation \textbf{($\alpha = 2$ for laminar, $\alpha = 1.05$ for turbulent)}
+\begin{align*}
+    \frac{P_1}{\rho g} + \alpha_1 \frac{\dot{x}_1^2}{2g} + z_1 + h_{\text{pump}, u} &= \frac{P_2}{\rho g} + \alpha_2 \frac{\dot{x}_2^2}{2g} + z_2 + h_{\text{turbine}, e} + h_L
+\end{align*}
+Loss coefficient
+\begin{align*}
+    h_{L, \text{minor}} = K_L \frac{\dot{x}^2}{2g}
+\end{align*}
+for sudden expansion,
+\begin{align*}
+    K_L = \alpha \left(1 - \frac{d_{\text{small}}}{d_{\text{large}}}\right)^2
+\end{align*}
+pump work,
+\begin{align*}
+    \dot{W}_{\text{pump}} = \dot{V} \Delta P
+\end{align*}

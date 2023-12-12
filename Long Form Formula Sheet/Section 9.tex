@@ -24,7 +24,6 @@
     \item Solve for whatever is asked for in the problem statement.
 \end{enumerate}
 
-% Add this to a glossary section later
 \subsection*{9.2. Operator Definitions}
 \begin{itemize}
     \item $\nabla$: The gradient operator, $\nabla = \frac{\partial}{\partial x} \hat{i} + \frac{\partial}{\partial y} \hat{j} + \frac{\partial}{\partial z} \hat{k}$
@@ -45,7 +44,6 @@
 \end{itemize}
 
 \subsection*{9.4 Formulas}
-\vspace{-0.4cm}
 \begin{fleqn}
 \begin{align*}
     &\text{Continuity Equation: } \frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \vec{V}) = 0 \\
@@ -58,7 +56,6 @@
     &\text{Incompressible flow, Newtonian, Navier-Stokes Equation:}
 \end{align*}
 \end{fleqn}
-\vspace{-1.0cm}
 \begin{align*}
     \rho \frac{ D \vec{V}}{D t}  &= -\nabla P + \rho \vec{g} + \mu \nabla^2 \vec{V} 
 \end{align*}
@@ -68,9 +65,13 @@ For example in x-direction:
     = &-\frac{\partial P}{\partial x} + \rho g_x \\
     &+ \mu \left(\frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} + \frac{\partial^2 u}{\partial z^2}\right)
 \end{align*}
-\vspace{-0.5cm}
 \subsection*{9.5 General Terms}
 \begin{itemize}
-    \item Control volume analysis: A method of analysis in which a volume in space is selected and the conservation of mass, momentum, and energy are applied to the volume
-    \item Differential analysis: involves application of differential equations of fluid motion to any and every point in the flow field over a region called the flow domain.
+    \item Control volume analysis: very useful tool to engineering for flow analysis. Gives 'engineering analysis' answer, sometimes crude approximation, but always useful.
+    A method of analysis in which a volume in space is selected and the conservation of mass, momentum, and energy are applied to the volume
+    \item Differential analysis:  in principle can be used for any problems. In practice, limited cases where exact analytical solutions exist. 
+    Nowadays, CFD (computational fluid dynamics) simulations are widely performed based on differential analysis. Involves application of differential 
+    equations of fluid motion to any and every point in the flow field over a region called the flow domain.
+    Experimental (dimensional) analysis: based on the results of experiments. Technique to derive the most use out of the fewest number of experiments 
+    (which cost time and money)
 \end{itemize}

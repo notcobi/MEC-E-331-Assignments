@@ -20,6 +20,9 @@
 \begin{fleqn}
     \begin{align*}
         &\text{Momentum Equation: } \sum \vec{F} = \sum_{\text{out}} \beta \dot{m} \vec{V} - \sum_{\text{in}} \beta \dot{m} \vec{V} \\
-        &\text{Momentum Correction Factor: } \beta = \frac{1}{A_c} \int_{A_c} \left(\frac{V}{V_{\text{avg}}}\right)^2 dA_c 
+        &\text{Momentum Correction Factor: } \beta = \begin{cases}
+            4/3 & \text{laminar} \\
+            1 & \text{turbulent}
+        \end{cases} \\ 
     \end{align*}
 \end{fleqn}

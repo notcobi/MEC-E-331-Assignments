@@ -1,0 +1,73 @@
+\section{1. Pre-midterm Stuff}
+\subsection{1.1 Variable Definitions and Terms}
+% Fluid: A fluid is a substance that deforms continuously under the application of shear (tangential) stressFluid Mechanics: deals with fluids at rest (fluid statics) and fluids in motion (fluid dynamics)Internal flow: fluid is bounded by solid surface i.e. flow in a pipe or ductExternal flow: unbounded flow or a fluid over a surface i.e. airplane wing airLaminar flow: smooth orderly layered flow - low velocities, high viscosity fluidsTurbulent flow: highly disordered flow patterns - low viscosity and/or high speedSpecific Gravity: the ratio of the density of a substance to the density of some standard substance at a specified tempSpecific weight: the weight of a unit volume of a substance. Is equal to density times gravityViscosity: A property that represents the internal resistance of a fluid to motion or the “fluidity”. Viscosity relates the local stress in a moving fluid to the strain rate of the fluid elementNewtonian fluids: When shear stress is proportional to strain ratePseudoplastic: the more the fluid is sheared the less viscous it becomesDilatant: The more the fluid is sheared the more viscous it becomesEulerian: concerned with the fluid properties at a specific space-time pointLagrangian: concerned with a particular particle of fluid as it moves through space at timeStreamline: A streamline is a curve that is everywhere tangent to the instantaneous local velocity vectorPathlines: A pathline is the actual path traveled by an individual fluid particleStreaklines: A streakline is the locus of fluid particles that have passed sequentially through a prescribed point in the flowTimeline: A set of adjacent fluid particles marked as the same (earlier) instant in timeStreamtube: consists a bundle of streamlinesControl system: consists of a fixed amount of mass, and no mass can cross the boundaryControl volume: a volume in spaceReynolds Transport Theorem: the relationship between time rates of change of extensive property for a system and for a control volumeBernoulli: Provides a good approximation and is valid in regions of steady, incompressible flow where net frictional forces are negligible1st Law of Thermodynamics: Energy cannot be created or destroyed2nd Law of Thermodynamics: For a spontaneous process, the entropy of the universe increases
+\begin{itemize}
+    \item Fluid: A fluid is a substance that deforms continuously under the application of shear (tangential) stress
+    \item Fluid Mechanics: deals with fluids at rest (fluid statics) and fluids in motion (fluid dynamics)
+    \item Internal flow: fluid is bounded by solid surface i.e. flow in a pipe or duct
+    \item External flow: unbounded flow or a fluid over a surface i.e. airplane wing air
+    \item Laminar flow: smooth orderly layered flow - low velocities, high viscosity fluids
+    \item Turbulent flow: highly disordered flow patterns - low viscosity and/or high speed
+    \item Specific Gravity: the ratio of the density of a substance to the density of some standard substance at a specified temp
+    \item Specific weight: the weight of a unit volume of a substance. Is equal to density times gravity
+    \item Viscosity: A property that represents the internal resistance of a fluid to motion or the “fluidity”. Viscosity relates the local stress in a moving fluid to the strain rate of the fluid element
+    \item Newtonian fluids: When shear stress is proportional to strain rate
+    \item Pseudoplastic: the more the fluid is sheared the less viscous it becomes
+    \item Dilatant: The more the fluid is sheared the more viscous it becomes
+    \item Eulerian: concerned with the fluid properties at a specific space-time point
+    \item Lagrangian: concerned with a particular particle of fluid as it moves through space at time
+    \item Streamline: A streamline is a curve that is everywhere tangent to the instantaneous local velocity vector
+    \item Pathlines: A pathline is the actual path traveled by an individual fluid particle
+    \item Streaklines: A streakline is the locus of fluid particles that have passed sequentially through a prescribed point in the flow
+    \item Timeline: A set of adjacent fluid particles marked as the same (earlier) instant in time
+    \item Streamtube: consists a bundle of streamlines
+    \item Control system: consists of a fixed amount of mass, and no mass can cross the boundary
+    \item Control volume: a volume in space
+    \item Reynolds Transport Theorem: the relationship between time rates of change of extensive property for a system and for a control volume
+    \item 1st Law of Thermodynamics: Energy cannot be created or destroyed
+    \item 2nd Law of Thermodynamics: For a spontaneous process, the entropy of the universe increases
+\end{itemize}
+\subsection{1.2 Formulas}
+\subsubsection{1.2.1 Steady Flow}
+Steady laminar flow means linear velocity profile, Newtonian fluid stuff:
+\begin{align*}
+    \tau &= \mu \frac{du}{dy} \\
+    u &= \frac{V - 0}{h - 0}y 
+\end{align*}
+For force,
+\begin{align*}
+    F &= \tau A = \mu \frac{du}{dy} A 
+\end{align*}
+\subsubsection{1.2.2 Manometer}
+Manometer stuff: 
+\begin{enumerate}[label=\roman*)]
+    \item Start at one end of known pressure. If open to atmosphere then use $P_{\text{atm}}$.
+    \item If going down, add $\rho g h$ to the pressure. If going up, subtract $\rho g h$ from the pressure.
+\end{enumerate}
+\begin{align*}
+    P_1 + \sum \rho_i g h_i &= P_2
+\end{align*}
+\subsubsection{1.2.3 Vector Fields}
+Vector field stuff: Stagnation point when $\vec{V} = 0$. Acceleration field:
+\begin{align*}
+    a_x &=  \frac{\partial u}{\partial t} + u \frac{\partial u}{\partial x} + v \frac{\partial u}{\partial y} + w \frac{\partial u}{\partial z} \\
+    a_y &=  \frac{\partial v}{\partial t} + u \frac{\partial v}{\partial x} + v \frac{\partial v}{\partial y} + w \frac{\partial v}{\partial z} \\
+    a_z &=  \frac{\partial w}{\partial t} + u \frac{\partial w}{\partial x} + v \frac{\partial w}{\partial y} + w \frac{\partial w}{\partial z} \\
+\end{align*}
+Streamline: For 2D, you can check exactness by 
+\begin{align*}
+    \frac{\partial u}{\partial y} &= \frac{\partial v}{\partial x}
+\end{align*}
+you can solve for streamline with 
+\begin{align*}
+    u dx + v dy &= 0 
+\end{align*}
+by solving for y in terms of x.
+\subsubsection{1.2.4 Reynolds Transport Theorem}
+The statement of the Reynolds Transport Theorem is
+\begin{align*}
+    \frac{dN_{\text{sys}}}{dt} &= \frac{d}{dt} \int_{\text{CV}} \eta \rho dV + \int_{\text{CS}} \eta \rho (\vec{V} \cdot \hat{n}) dA
+\end{align*}
+which says time rate of change of property N = time rate of change of property N in CV + net rate of flux of N out of CV.
+
+
